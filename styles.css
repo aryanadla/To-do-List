@@ -34,15 +34,16 @@ li:nth-child(odd) {
 .small{
 width:40%;
 height:50px;
-font-size: 16px;
-
-  border-radius: 5px;
+font-size: 22px;
+ border-radius: 5px;
+ margin:10px;
+ border-color:green;
 }
 .smaller{
 width:30%;
 height:30px;
 font-size: 18px;
-padding: 10px 20px 10;
+padding: 15px 20px 10;
 border-radius: 5px;
 box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 cursor: pointer;
