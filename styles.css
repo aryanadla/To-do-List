@@ -41,7 +41,7 @@ font-size: 16px;
 .smaller{
 width:30%;
 height:30px;
-font-size: 16px;
+font-size: 18px;
 padding: 10px 20px 10;
 border-radius: 5px;
 box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
@@ -49,5 +49,6 @@ cursor: pointer;
 border-right:none;
 border-left:none;
 border-top:none;
+ border-color: green;
 }
 
