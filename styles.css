@@ -9,7 +9,7 @@
   border-color: #ff0000; /* set the color of the border */
 }
 body{
-background-color:skyblue;
+background-color:#87CEFA;
 }
 .halfCenter{
     padding-left:30px;
@@ -53,5 +53,11 @@ border-top:none;
  border-color: green;
 }
 .btn{
-    margin:50px;
+  position: absolute;
+  left: calc(100% - 100px);
+  height:10%;
 }
+li strong {
+  font-size:30px;
+}
+

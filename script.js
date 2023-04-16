@@ -3,7 +3,7 @@ function handleSubmit(event,id){
 event.preventDefault();
     const txt=document.getElementById(id).value;
     const newItem=document.createElement('li');
-    newItem.textContent=txt;
+    newItem.innerHTML=`<strong>${txt}</strong>`;
     const btn=document.createElement('button');
     btn.classList.add('btn');
     btn.textContent='Done';
