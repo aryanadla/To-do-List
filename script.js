@@ -12,6 +12,7 @@ event.preventDefault();
     });
     newItem.appendChild(btn);
     document.getElementById('list').appendChild(newItem);
+
     document.getElementById(id).value='';
 
 }

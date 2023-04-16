@@ -24,6 +24,10 @@ padding-bottom:400px;
 padding-right:300px;
 border:5px dotted #000000;
  border-color: #ff0000;
+
+ max-width: 300px; /* Set a minimum width */
+  height: 80px; /* Set a fixed height */
+  overflow-y: auto; /* Add a scrollbar when needed */
 }
 li:nth-child(even) {
  color: yellow;
@@ -57,6 +61,10 @@ border-top:none;
   left: calc(100% - 100px);
   height:10%;
 }
+li {
+  margin-bottom: 30px;
+}
+
 li strong {
   font-size:30px;
 }
