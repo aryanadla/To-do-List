@@ -26,10 +26,10 @@ border:5px dotted #000000;
  border-color: #ff0000;
 }
 li:nth-child(even) {
-  background-color: yellow;
+ color: yellow;
 }
 li:nth-child(odd) {
-  background-color: lightgreen;
+color: lightgreen;
 }
 .small{
 width:40%;
@@ -52,4 +52,6 @@ border-left:none;
 border-top:none;
  border-color: green;
 }
-
+.btn{
+    margin:50px;
+}

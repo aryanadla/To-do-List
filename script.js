@@ -4,6 +4,14 @@ event.preventDefault();
     const txt=document.getElementById(id).value;
     const newItem=document.createElement('li');
     newItem.textContent=txt;
+    const btn=document.createElement('button');
+    btn.classList.add('btn');
+    btn.textContent='Done';
+    btn.addEventListener('click',function(){
+    newItem.remove();
+    });
+    newItem.appendChild(btn);
     document.getElementById('list').appendChild(newItem);
     document.getElementById(id).value='';
+
 }
