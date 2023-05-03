@@ -1,98 +1,129 @@
-.Task{
-    position:absolute;
-    top:40%;
-    left:05%;
-    right:71%;
-    padding-left:30px;
-    padding-bottom:30px;
-  border: 5px dotted #000000; /* set the border of the div */
-  border-color: #ff0000; /* set the color of the border */
-}
-body{
-background-color:#87CEFA;
-}
-.halfCenter{
-    padding-left:30px;
-    padding-top:20px;
-}
-.Mid{
-position:absolute;
-top:20%;
-left:40%;
-padding-left:30px;
-padding-bottom:400px;
-padding-right:300px;
-border:5px dotted #000000;
- border-color: #ff0000;
- max-width: 300px; /* Set a minimum width */
-  height: 80px; /* Set a fixed height */
-  overflow-y: auto; /* Add a scrollbar when needed */
-}
-li:nth-child(even) {
- color: yellow;
-}
-li:nth-child(odd) {
-color: lightgreen;
-}
-.small{
-width:40%;
-height:50px;
-font-size: 22px;
- border-radius: 5px;
- margin:10px;
- border-color:green;
-}
-.smaller{
-width:30%;
-height:30px;
-font-size: 18px;
-padding: 15px 20px 10;
-border-radius: 5px;
-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-cursor: pointer;
-border-right:none;
-border-left:none;
-border-top:none;
- border-color: green;
-}
-.btn{
-  position: absolute;
-  left: calc(100% - 100px);
-  height:10%;
-}
-li {
-  margin-bottom: 30px;
-}
-
-li strong {
-  font-size:30px;
-}
-header{
-background: linear-gradient(to bottom,#4CB8C4, #3CD3AD);
-width:100%;
-height:50px;
-}
-footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  height:50px;
-  background: linear-gradient(to bottom, #0088cc, #004466);
-}
+/* Styles for body element */
 body {
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #f5f5f5;
 }
-.space{
-padding:10px 20px;
+
+/* Styles for header element */
+header {
+  background-color: #7b68ee;
+  color: white;
+  height: 60px;
+  display: flex;
+  align-items: center;
 }
-a {
-  padding: 10px;
+
+header img {
+  margin-right: 10px;
 }
-.line {
-  display: inline-block;
-  height: 50px;
-  border-right: 1px solid black;
+
+header .line {
+  height: 40px;
+  border-left: 2px solid white;
   margin-left: 10px;
-  /* add your line styling here */
+  margin-right: 20px;
+}
+
+/* Styles for task form */
+.Task {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.Task h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #7b68ee;
+}
+
+.form {
+  display: flex;
+  margin-top: 20px;
+  width: 100%;
+  justify-content: center;
+}
+
+.small {
+  height: 40px;
+  font-size: 16px;
+  padding-left: 10px;
+  margin-right: 5px;
+  width: 60%;
+  border: none;
+  border-radius: 5px;
+}
+
+.smaller {
+  height: 40px;
+  font-size: 16px;
+  color: white;
+  background-color: #7b68ee;
+  border: none;
+  border-radius: 5px;
+}
+
+.smaller:hover {
+  background-color: #6a5acd;
+}
+
+/* Styles for list */
+.Mid {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 50px;
+  color: #7b68ee;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 80%;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  font-size: 16px;
+  border-bottom: 1px solid #ccc;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+li .delete {
+  cursor: pointer;
+  color: red;
+  font-weight: bold;
+}
+
+/* Styles for footer element */
+footer {
+  background-color: #7b68ee;
+  color: white;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+footer a {
+  margin-left: 10px;
+  margin-right: 10px;
 }
