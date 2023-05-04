@@ -113,6 +113,7 @@ li .delete {
 }
 
 /* Styles for footer element */
+/* Styles for footer element */
 footer {
   background-color: #7b68ee;
   color: white;
@@ -121,9 +122,14 @@ footer {
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 footer a {
   margin-left: 10px;
   margin-right: 10px;
 }
+
