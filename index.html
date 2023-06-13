@@ -1,40 +1,37 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
-      xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title> A To-Do List </title>
-    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <title>A To-Do List</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
     <script src="script.js"></script>
 </head>
 <header>
-
-     <img src="notepad.png" alt="Image description" height="40" style="padding-left: 20px; padding-top:4px; padding-bottom:2px;">
-      <div class="line"></div>
-    </header>
+    <img src="notepad.png" alt="Image description" height="40" style="padding-left: 20px; padding-top:4px; padding-bottom:2px;">
+    <div class="line"></div>
+</header>
 <body>
-<div class ="Task">
-    <h2 class="halfCenter"> Add to To-Do List </h2>
-    <form class="form" id="f1" onsubmit="handleSubmit(event,'task1')">
-        <input class="small" type="text" id="task1" name="task1" title=" Task" placeholder="  Enter task ">
-        <input class="smaller" type="submit" value="Add">
-    </form>
-</div>
-   <h1> <center style="margin-top: 3%;margin-left:5%;color:purple;"> List is</center></h1>
-<div class="Mid">
-   <ul id="list"> </ul>
-</div>
+    <div class="Task">
+        <h2 class="halfCenter">Add to To-Do List</h2>
+        <form class="form" id="f1" onsubmit="handleSubmit(event,'task1')">
+            <input class="small" type="text" id="task1" name="task1" title="Task" placeholder="Enter task">
+            <input class="smaller" type="submit" value="Add">
+        </form>
+    </div>
+    <h1><center style="margin-top: 3%; margin-left: 5%; color: purple;">List is</center></h1>
+    <div class="Mid">
+        <ul id="list"></ul>
+    </div>
 </body>
 <footer>
     <div class="space">
-    Contact us
-      <a href="https://www.linkedin.com/in/parth-seth-5642a124a/" >
-  <img src="linked.png" alt="Image description" height="25">
-</a>
-           <a href="https://github.com/BreakTos/">
-  <img src="git.png" alt="Image description" height="25">
-</a>
-        </div>
-
+        Contact us
+        <a href="https://www.linkedin.com/in/parth-seth-5642a124a/">
+            <img src="linked.png" alt="Image description" height="25">
+        </a>
+        <a href="https://github.com/BreakTos/">
+            <img src="git.png" alt="Image description" height="25">
+        </a>
+    </div>
 </footer>
 </html>
