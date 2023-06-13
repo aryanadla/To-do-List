@@ -1,18 +1,20 @@
-
-function handleSubmit(event,id){
-event.preventDefault();
-    const txt=document.getElementById(id).value;
-    const newItem=document.createElement('li');
-    newItem.innerHTML=`<strong>${txt}</strong>`;
-    const btn=document.createElement('button');
-    btn.classList.add('btn');
-    btn.textContent='Done';
-    btn.addEventListener('click',function(){
+function handleSubmit(event, id) {
+  event.preventDefault();
+  var txt = document.getElementById(id).value;
+  const newItem = document.createElement('li');
+  const link = document.createElement('a');
+  link.innerHTML = `<strong>${txt}</strong>`;
+  if (!txt.startsWith('https://') && !txt.startsWith('http://')) {
+  txt = 'https://' + txt; // Prepend "https://" to the URL
+}
+  link.href = txt; // Set the entered text as the URL for the link
+  link.target = '_blank'; // Open the link in a new tab/window
+  
+  link.addEventListener('click', function () {
     newItem.remove();
-    });
-    newItem.appendChild(btn);
-    document.getElementById('list').appendChild(newItem);
+  });
 
-    document.getElementById(id).value='';
-
+  newItem.appendChild(link);
+  document.getElementById('list').appendChild(newItem);
+  document.getElementById(id).value = '';
 }
