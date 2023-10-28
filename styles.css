@@ -3,7 +3,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f5f5f5;
+  background-color: #d1e4f4;
 }
 
 .Task {
@@ -24,6 +24,10 @@ body {
   margin-top: 20px;
   width: 100%;
   justify-content: center;
+}
+
+.form input {
+  margin: 0 1rem;
 }
 
 .small {
@@ -60,6 +64,10 @@ h1 {
   text-align: center;
   margin-top: 50px;
   color: #7b68ee;
+}
+
+.list-is {
+  color: purple;
 }
 
 ul {
@@ -110,5 +118,11 @@ footer {
 footer a {
   margin-left: 10px;
   margin-right: 10px;
+  text-decoration: none;
+}
+
+.space {
+  display: flex;
+  align-items: center;
 }
 
