@@ -2,32 +2,83 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>A To-Do List</title>
-    <link href="styles.css" rel="stylesheet" type="text/css">
-    <script src="script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #d4e6f1;
+            text-align: center;
+        }
+        h1 {
+            color: purple;
+        }
+        .task-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        #taskInput, #startTimeInput, #endTimeInput {
+            margin: 10px;
+            padding: 10px;
+        }
+        #taskInput {
+            width: 50%;
+        }
+        #startTimeInput, #endTimeInput {
+            width: 20%;
+        }
+        #addTaskBtn {
+            padding: 10px 20px;
+            background-color: purple;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+        #clearAllBtn {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: red;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        ul {
+            list-style-type: none;
+        }
+        li {
+            padding: 10px;
+            margin: 10px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+        }
+        .edit-btn, .done-btn {
+            margin-left: 10px;
+            padding: 5px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-    <div class="Task">
-        <h2 class="halfCenter">Add to To-Do List</h2>
-        <form class="form" id="f1" onsubmit="handleSubmit(event,'task1')">
-            <input class="small" type="text" id="task1" name="task1" title="Task" placeholder="Enter a task to the list">
-            <input class="smaller" type="submit" value="Add or Click Enter">
-        </form>
+
+    <h1>Add to To-Do List</h1>
+    
+    <!-- Task input section with start and end time beside each other -->
+    <div class="task-container">
+        <input type="text" id="taskInput" placeholder="Enter a task">
+        <input type="time" id="startTimeInput" placeholder="Start Time">
+        <input type="time" id="endTimeInput" placeholder="End Time">
+        <button id="addTaskBtn" onclick="handleSubmit(event)">Add Task</button>
     </div>
-    <h1 class="list-is">Current List is : </h1>
-    <div class="Mid">
-        <ul id="list"></ul>
-    </div>
+    
+    <button id="clearAllBtn" onclick="clearAllTasks()">Clear All Tasks</button>
+
+    <h2>Current List is:</h2>
+    <ul id="list"></ul>
+
+    <script src="script.js"></script>
+
 </body>
-<footer>
-    <div class="space">
-        Contact us
-        <a href="https://www.linkedin.com/in/parth-seth-5642a124a/">
-            <img src="linked.png" alt="Image description" height="25">
-        </a>
-        <a href="https://github.com/BreakTos/">
-            <img src="git.png" alt="Image description" height="25">
-        </a>
-    </div>
-</footer>
 </html>
